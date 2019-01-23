@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 25, 2017 9:24:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.agenda.domain.Ciudad" table="ciudad" catalog="easy_aero" optimistic-lock="version">
+        <id name="pkId" type="java.lang.Integer">
+            <column name="pk_id" />
+            <generator class="identity" />
+        </id>
+        <property name="nombre" type="string">
+            <column name="nombre" length="30" not-null="true" />
+        </property>
+        <property name="ultUsuario" type="string">
+            <column name="ultUsuario" length="20" />
+        </property>
+        <property name="ultModificacion" type="date">
+            <column name="ultModificacion" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

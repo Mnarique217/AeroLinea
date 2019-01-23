@@ -1,0 +1,620 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 14, 2016, 6:10:17 PM
+    Author     : chgari modificado por GeekMQ
+*/
+
+
+.cont_bienvenidos{
+    background-color: #33333D;
+    width: 100%;
+    height: 500px;
+
+}
+
+
+#enviar,#siguiente,#cancelar{
+
+    margin-top: 25px;
+}
+
+.ajustado{
+    display: table; 
+}
+
+#buscadorPrincipal{
+
+    margin-top: 20px;
+}
+
+.imgTurbina{
+    background-image: url("../imagenes/blog-img1.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.imgBuscador{
+    background-image: url("../imagenes/buscador.jpg");
+    width:  100%; 
+    height: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+}
+
+.registro{
+
+    background-image: url("../imagenes/imgWaf.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.loading{
+    background-image: url("../imagenes/loader.gif");
+    width: 100%;
+    height: 20px;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.texLarge{
+
+    width: 50%; 
+}
+
+
+.boxLog{
+    width: 50%;
+    background-color: rgba(0,0,0,0.8);
+    position: relative;
+    opacity: 0.8;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin: auto;
+    padding: 5px; /*espacios de 20px*/    
+    display: flex; /*coloca el contenido en linea*/    
+    flex-wrap: wrap;/*tira abajo lo que no cabe*/
+    justify-content: center;
+}
+
+.asiento{
+    background-image: url("../imagenes/pubfond/asiento.jpg");
+
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.allowed{
+    background-image: url("../imagenes/allow.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.avionmdl{
+    background: rgba(0, 0, 0, 0.5) url("../imagenes/pubfond/asiento.jpg")no-repeat;
+    font-family: "Titillium Web",sans-serif;
+
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+
+
+.marginTop{
+    margin-top: 10px;
+}
+
+.boximg {    /*el contenido*/    
+    width: 80%;
+    margin: auto;
+    padding: 5px; /*espacios de 20px*/    
+    display: flex; /*coloca el contenido en linea*/    
+    flex-wrap: wrap;/*tira abajo lo que no cabe*/
+    justify-content: center;
+}
+
+
+.contenido {    /*el contenido*/    
+    width: 60%;
+    margin: auto;
+    padding: 20px; /*espacios de 20px*/    
+    display: flex; /*coloca el contenido en linea*/    
+    flex-wrap: wrap;/*tira abajo lo que no cabe*/
+    justify-content: center;
+}
+
+
+
+.back_azulado{
+
+    background-color: #f0f0f0;
+}
+
+select{
+    padding: 5px;    
+    margin: 10px;
+    color: black;
+    width: 80px;
+}
+
+.textBlack{
+
+    color: black;
+}
+
+.colorRojo{
+    background-color: #B40404;
+    color: white
+}
+
+
+.colorBlack{
+
+    background-color: #111;
+}
+#tiposSelect,#personasSelect,#tiposSelect{
+
+    margin-left: 20px;
+    background-color: silver;
+}
+
+.texMediano{
+    width: 100px; 
+
+}
+
+.modal-body {
+    max-height: calc(100vh - 210px);
+    overflow-y: auto;
+}
+
+.justificado{
+    text-align: justify;      
+}
+.height25{
+    height: 25px;
+}
+
+.hiddenDiv{
+    display: none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.fondo_cabecera {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2%;
+    background-image: url('../imagenes/logo.jpg');
+    background-size: 100% 100%;
+    border: 1px solid black;
+    position:absolute;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.fondo_playa{
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2%;
+    background-image: url('../imagenes/playa.jpg');
+    background-size: 100% 100%;
+    border: 1px solid black;
+    position: relative;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+.img{
+    width: 100%;
+    height:500px;  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.img_fix{
+    position: relative;
+    width: 100%;
+}
+
+.flotar_iz{
+    float: left;
+    padding: 5px;
+}
+
+
+/*
+**************************************************************************
+contenedrores
+**************************************************************************
+*/
+.articulo{
+    padding: 20px;
+    background-color: #FFFFFF;
+
+    width: auto;
+}
+.cont_ofertas{
+    width:60%;
+    height:auto;
+    background-size: 100% 100%;
+    height: auto;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 6%;
+    position: relative;
+    -webkit-box-shadow: 2px 5px 109px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 5px 109px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 5px 109px 0px rgba(0,0,0,0.75);
+}
+#cabeza{
+    width:100%;
+    height: 25%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 1%;
+    position: relative;
+}
+
+.linea{
+    width:100%;
+
+
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+}
+.linea2{
+
+    padding: 2px;
+    width:40%;
+    height:auto;
+    box-shadow: 0px 1px 15px 0px #000;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+
+}
+
+.box{
+
+    padding: 30px;
+    width:70%;
+    height:auto;
+    box-shadow: 0px 1px 1px 1px black;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+}
+.noBorde{
+    border: none;
+
+}
+
+.boxRegistro{
+    display: table;
+    margin-top: 5%;
+    padding: 30px;
+    width:70%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    background-color: rgba(0,0,0,0.8);
+    opacity: 0.8;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
+}
+
+.contenedor{
+    padding-top: 10px;
+    width: 70%;
+    height: auto;
+    margin:  auto;
+    background-color:#fff; 
+    box-shadow: 0px 1px 15px 0px #000;
+}
+
+/*
+***************************************************************************
+*/
+
+ul.oferta li{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 15px;
+}
+p:hover { 
+    background-color: gray;
+}
+
+.margen_fondo7px{
+    margin-bottom: 7px;
+}
+
+p{
+    text-align: justify;
+    padding: 5px;
+}
+
+
+h3{
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+#desc{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+
+}
+
+#desc2{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+
+}
+
+h2{
+    font-family: 'Orbitron', sans-serif;
+    color:#fff;
+    text-align: center;
+}
+
+#dat{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+
+.text_blanco{
+    color:white;   
+}
+
+.caja_buscador{
+
+    display: flex;
+    margin-left:  auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 50%;
+    background-color: rgba(0,0,0,0.8);
+    position: relative;
+    opacity: 0.8;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+
+    -webkit-border-radius:5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px
+}
+
+
+
+div table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table tr td {
+    padding: 5px;
+}
+#cuenta{
+    font-family: 'Orbitron', sans-serif;
+    text-align: center; 
+}
+
+.ancho1{
+    width: 55%;
+    height: 15%;
+}
+
+
+/*
+********************************************************
+imagenes
+********************************************************
+*/
+.img_avion{
+    background-image: url(../imagenes/lg.png);
+    width: 100%;
+    height:400px; 
+    background-size: 100% 100%; 
+}
+.imgAerop{
+
+    background-image: url(../imagenes/aerop.jpg);
+    width: 100%;
+    height:400px; 
+    padding: 25px;
+    background-size: 100% 100%; 
+}
+/*
+*******************************************************
+footer
+*******************************************************
+*/
+.twiter{
+    background-image: url("../imagenes/twitter.png");
+    width: 100%;
+    height:50px;
+    background-repeat: no-repeat;
+}
+.face{
+    background-image: url("../imagenes/face.png");
+    width: 100%;
+    height:50px;
+    background-repeat: no-repeat;
+}
+footer div{
+    margin-left: 10px;
+}
+
+.margen_iz{
+    margin-left: 10px;
+}
+.footer4 {
+    background: #33333D;
+    border-top: 4px solid #38a5e0;
+    clear: both;
+    color: #fff;
+    min-height: 465px;
+    position: relative;
+    top: -1px;
+}
+
+/*
+***************************************************
+maps
+***************************************************
+*/
+.map {
+    box-shadow: 0px 1px 15px 0px #000;
+    -webkit-border-radius:5px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding:3px; 
+    height: 300px;
+    width: 96%;
+}
+
+#map{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+
+/*
+****************************************************
+imagenes
+****************************************************
+*/
+img{
+
+    margin:7px;
+}
+.img_responsive{
+
+    width: 100%;
+    height: auto;
+}
+
+
+@media (min-width:768px) {
+    .galeria__item {
+        width: 30%;
+    }
+}
+@media (min-width:1024px) {
+    .galeria__item {
+        width: 20%;
+        margin: 15px;
+    }
+}
+
+
+.contenedor_slider{
+
+
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.navbar {
+    background-color: transparent;
+    background: transparent;
+    border-color: transparent;
+    
+}
+
+.transparente{
+      background-color: transparent;
+    background: transparent;
+    border-color: transparent;  
+    
+}
+
+.texto_barra{
+     font-family: 'Orbitron', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+
+b:hover{
+    background-color: #B40404;
+}
+.txt_bienvenida{
+    width: 50%;
+    display: flex;
+    font-size: 50px;
+    color: white;
+    font:  sans-serif;
+    justify-content: center;
+    margin: auto;
+    margin-top: 350px;
+}
+
+
+
+
+#cajaRegistro{
+    
+    margin-bottom: 40px;
+}
+
+.container_slider{
+   
+    width: 80%;
+}

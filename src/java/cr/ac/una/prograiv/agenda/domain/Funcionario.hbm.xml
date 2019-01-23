@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 25, 2017 9:24:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.agenda.domain.Funcionario" table="funcionario" catalog="easy_aero" optimistic-lock="version">
+        <id name="pkId" type="java.lang.Integer">
+            <column name="pk_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="persona" class="cr.ac.una.prograiv.agenda.domain.Persona" lazy="false" fetch="select">
+            <column name="fk_persona" not-null="true" />
+        </many-to-one>
+        <property name="nombreUsuario" type="string">
+            <column name="nombre_usuario" length="30" not-null="true" />
+        </property>
+        <property name="contrasena" type="string">
+            <column name="contrasena" length="15" not-null="true" />
+        </property>
+        <property name="rol" type="string">
+            <column name="rol" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,48 @@
+
+#avion:hover{
+    cursor: pointer;
+}
+
+#avion{
+
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+    padding: 5px;
+}
+.avion_seat{
+    margin: 3px;
+    text-align: center;
+    background: #ddd;
+    padding: 3px;
+    box-sizing: border-box;
+    width: 28px;
+    border-radius: 3px;
+    font-weight:bolder;
+    color:black;
+}
+
+
+.pasillo{
+    margin: 3px;
+    text-align: center;
+    padding: 3px;
+    box-sizing: border-box;
+    width: 28px;
+    background: #3d3d3d;
+    color:#fff;
+    font-weight:bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.codigo_asiento{
+    font-weight: bolder;
+    font-size: 12px;
+}
+.avion_seat img{
+    width: 22px;
+    margin: auto;
+}

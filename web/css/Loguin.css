@@ -1,0 +1,73 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 13, 2017, 10:50:00 PM
+    Author     : GeekMQ
+*/
+
+
+body, html {
+    height: 100%;
+}
+
+.header3 {
+    background: rgba(0, 0, 0, 0) url("../imagenes/pubfond/asiento.jpg")no-repeat scroll center -90px;
+    font-family: "Titillium Web",sans-serif;
+    
+
+    /* Full height */
+    height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+}
+body {
+    color: #333;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+/***************************************************/
+
+
+
+*::before, *::after {
+    box-sizing: border-box;
+}
+*::before, *::after {
+    box-sizing: border-box;
+}
+.footer4 {
+    background: black;
+    border-top: 4px solid #38a5e0;
+    clear: both;
+    color: #fff;
+    min-height: 465px;
+    position: relative;
+    top: -1px;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+* {
+    outline-color: transparent;
+}
+* {
+    box-sizing: border-box;
+}
+p{
+    color: white;
+}
+.texLarge{
+
+    width: 50%; 
+}
+.text_blanco{
+    color:white;   
+}

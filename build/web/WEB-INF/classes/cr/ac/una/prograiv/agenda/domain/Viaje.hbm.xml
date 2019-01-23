@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 25, 2017 9:24:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.agenda.domain.Viaje" table="viaje" catalog="easy_aero" optimistic-lock="version">
+        <id name="pkId" type="java.lang.Integer">
+            <column name="pk_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="vuelo" class="cr.ac.una.prograiv.agenda.domain.Vuelo" lazy="false" fetch="select">
+            <column name="fk_vuelo" not-null="true" />
+        </many-to-one>
+        <property name="fechaSalida" type="date">
+            <column name="fecha_salida" length="10" />
+        </property>
+        <property name="cantidadAsientosDisponibles" type="int">
+            <column name="cantidad_asientos_disponibles" not-null="true" />
+        </property>
+        <property name="precio" type="java.lang.Double">
+            <column name="precio" precision="22" scale="0" />
+        </property>
+        <property name="descuento" type="java.lang.Double">
+            <column name="descuento" precision="22" scale="0" />
+        </property>
+        <property name="ultUsuario" type="string">
+            <column name="ultUsuario" length="20" />
+        </property>
+        <property name="ultModificacion" type="date">
+            <column name="ultModificacion" length="10" />
+        </property>
+    </class>
+</hibernate-mapping>

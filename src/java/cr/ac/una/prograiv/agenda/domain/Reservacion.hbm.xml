@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 25, 2017 9:24:06 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="cr.ac.una.prograiv.agenda.domain.Reservacion" table="reservacion" catalog="easy_aero" optimistic-lock="version">
+        <id name="pkId" type="java.lang.Integer">
+            <column name="pk_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="usuario" class="cr.ac.una.prograiv.agenda.domain.Usuario" fetch="select">
+            <column name="fk_usuario" not-null="true" />
+        </many-to-one>
+        <many-to-one name="viaje" class="cr.ac.una.prograiv.agenda.domain.Viaje" fetch="select">
+            <column name="fk_viaje" not-null="true" />
+        </many-to-one>
+        <property name="cantidadAsientos" type="java.lang.Integer">
+            <column name="cantidad_asientos" />
+        </property>
+        <set name="tiquetes" table="tiquete" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="fk_reservacion" not-null="true" />
+            </key>
+            <one-to-many class="cr.ac.una.prograiv.agenda.domain.Tiquete" />
+        </set>
+    </class>
+</hibernate-mapping>
